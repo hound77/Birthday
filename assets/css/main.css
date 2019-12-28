@@ -2045,6 +2045,7 @@ input, select, textarea {
 				-webkit-justify-content: -webkit-flex-start;
 				-ms-justify-content: -ms-flex-start;
 				justify-content: flex-start;
+				padding-left: 15em;
 			}
 
 			.main.style2.right {
@@ -2052,6 +2053,7 @@ input, select, textarea {
 				-webkit-justify-content: -webkit-flex-end;
 				-ms-justify-content: -ms-flex-end;
 				justify-content: flex-end;
+				padding-right: 3em;
 			}
 
 			.main.style2.inactive.left > .content {
