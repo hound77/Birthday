@@ -1442,6 +1442,87 @@ input, select, textarea {
 
 		}
 
+/* single */
+
+	.single {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 15em;
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+	}
+
+		.single article {
+			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+			transition: transform 1s ease, opacity 1s ease;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			width: 100%;
+			position: relative;
+			opacity: 1.0;
+		}
+
+		.single.inactive article {
+			opacity: 0;
+		}
+
+			.single.inactive article.from-left {
+				-moz-transform: translateX(-14em);
+				-webkit-transform: translateX(-14em);
+				-ms-transform: translateX(-14em);
+				transform: translateX(-14em);
+			}
+
+			.single.inactive article.from-right {
+				-moz-transform: translateX(14em);
+				-webkit-transform: translateX(14em);
+				-ms-transform: translateX(14em);
+				transform: translateX(14em);
+			}
+
+			.single.inactive article.from-top {
+				-moz-transform: translateY(-3em);
+				-webkit-transform: translateY(-3em);
+				-ms-transform: translateY(-3em);
+				transform: translateY(-3em);
+			}
+
+			.single.inactive article.from-bottom {
+				-moz-transform: translateY(3em);
+				-webkit-transform: translateY(3em);
+				-ms-transform: translateY(3em);
+				transform: translateY(3em);
+			}
+
+		@media screen and (max-width: 480px) {
+
+			.single {
+				-moz-flex-wrap: nowrap;
+				-webkit-flex-wrap: nowrap;
+				-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				.single article {
+					width: 100%;
+				}
+
+		}
+
 /* Gallery */
 
 	.gallery {

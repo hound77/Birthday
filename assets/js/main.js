@@ -126,6 +126,18 @@
 							leave:		function() { $(this).addClass('inactive'); }
 						});
 
+				// Single.
+				$('.single')
+				.scrollex({
+					top:		'30vh',
+					bottom:		'30vh',
+					delay:		50,
+					initialize:	function() { $(this).addClass('inactive'); },
+					terminate:	function() { $(this).removeClass('inactive'); },
+					enter:		function() { $(this).removeClass('inactive'); },
+					leave:		function() { $(this).addClass('inactive'); }
+				});
+
 				// Generic sections.
 					$('.main.style1')
 						.scrollex({
@@ -141,17 +153,6 @@
 						.scrollex({
 							mode:		'middle',
 							delay:		100,
-							initialize:	function() { $(this).addClass('inactive'); },
-							terminate:	function() { $(this).removeClass('inactive'); },
-							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
-						});
-
-				// Contact.
-					$('#contact')
-						.scrollex({
-							top:		'50%',
-							delay:		50,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
@@ -166,17 +167,16 @@
 					$('.gallery')
 						.unscrollex();
 
+				// Single.
+					$('.single')
+					.unscrollex();
+
 				// Generic sections.
 					$('.main.style1')
 						.unscrollex();
 
 					$('.main.style2')
 						.unscrollex();
-
-				// Contact.
-					$('#contact')
-						.unscrollex();
-
 			};
 
 			breakpoints.on('<=small', off);
