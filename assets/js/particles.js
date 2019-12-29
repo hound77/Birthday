@@ -22,10 +22,10 @@ function createSnowFlakes() {
         particlesArray.push({
             x: Math.random() * w,  
             y: Math.random() * h,  
-            opacity: Math.random(),  
-            speedX: random(-11, 11),  
-            speedY: random(7, 15),    
-            radius:random(0.5, 4.2),
+            opacity: Math.random(),
+            speedX: random(-0.25, 0.25),  
+            speedY: random(0.25, 0.5),
+            radius:random(1, 6),
         })
     }
 };
@@ -41,9 +41,9 @@ function drawSnowFlakes(){
             particlesArray[i].radius  
             );
 
-            gradient.addColorStop(0, "rgba(255, 0, 102," + particlesArray[i].opacity + ")");  // pink
-            gradient.addColorStop(.8, "rgba(255, 80, 80," + particlesArray[i].opacity + ")");  // orange-pink
-            gradient.addColorStop(1, "rgba(255, 0, 0," + particlesArray[i].opacity + ")");   // red
+            gradient.addColorStop(0, "rgba(255, 102, 102," + particlesArray[i].opacity + ")");  // red
+            gradient.addColorStop(.8, "rgba(255, 240, 245," + particlesArray[i].opacity + ")");  // white
+            gradient.addColorStop(1, "rgba(255, 102, 178," + particlesArray[i].opacity + ")");   // pink
           
             ctx.beginPath(); 
             ctx.arc(
@@ -65,8 +65,8 @@ function moveSnowFlakes(){
         particlesArray[i].x += particlesArray[i].speedX;     
         particlesArray[i].y += particlesArray[i].speedY;     
 
-        if (particlesArray[i].y > h) {                                                                               
-            particlesArray[i].x = Math.random() * w * 1.5;
+        if (particlesArray[i].y > h) {
+            particlesArray[i].x = Math.random() * w;
             particlesArray[i].y = -50;
         }
     }
@@ -78,5 +78,5 @@ function updateSnowFall  () {
     moveSnowFlakes();
 };
 
-setInterval(updateSnowFall,50);
+setInterval(updateSnowFall,15);
 createSnowFlakes();
