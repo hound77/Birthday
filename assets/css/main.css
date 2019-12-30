@@ -2064,12 +2064,14 @@ input, select, textarea {
 		}
 
 			.main.style1 h1 {
-				font-size: 5em;
+				font-family: Brush Script MT, Brush Script Std, cursive;
+				font-size: 4em;
 				line-height: 1em;
 			}
 
 			.main.style1 h2 {
-				font-size: 3em;
+				font-family: Comic Sans MS, Comic Sans, cursive;
+				font-size: 2em;
 				line-height: 1em;
 			}
 
