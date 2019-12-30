@@ -1,5 +1,7 @@
-var canvas = document.getElementById("canvas"); // this only finds the first element, how to find all?
+var canvas = document.getElementById("canvas"); // this only finds the first element
+// var canvas_list = document.getElementsByTagName("canvas"); // this finds all elements, use for let to iterate
 // console.log(canvas);
+
 var ctx = canvas.getContext("2d");
 var particlesOnScreen = 245;
 var particlesArray = [];
