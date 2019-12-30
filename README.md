@@ -1,8 +1,8 @@
-# Anniversary Recap
+# Valentine's Recap
 
-Work in progress. A little gift I'm making for my gf to surprise her on our anniversary.
+Work in progress. A little gift I'm making for my gf to surprise her on Valentine's day.
 
-Hosted at https://tommyli3318.github.io/anniversary/
+Hosted at https://tommyli3318.github.io/valentines/
 
 Credits:
 
