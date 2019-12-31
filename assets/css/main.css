@@ -962,16 +962,16 @@ input, select, textarea {
 	}
 
 	.rotate-left:hover {
-		-webkit-transform: rotateZ(-15deg);
-		-ms-transform: rotateZ(-15deg);
-		transform: rotateZ(-15deg);
+		-webkit-transform: rotateZ(-5deg);
+		-ms-transform: rotateZ(-5deg);
+		transform: rotateZ(-5deg);
 		transition: 0.3s ease;
 	}
 
 	.rotate-right:hover {
-		-webkit-transform: rotateZ(15deg);
-		-ms-transform: rotateZ(15deg);
-		transform: rotateZ(15deg);
+		-webkit-transform: rotateZ(5deg);
+		-ms-transform: rotateZ(5deg);
+		transform: rotateZ(5deg);
 		transition: 0.3s ease;
 	}
 
