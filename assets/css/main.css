@@ -1959,7 +1959,9 @@ input, select, textarea {
 			}
 
 		#header nav {
-			position: absolute;
+			position: relative;
+			text-align: center;
+			left: 0.5em;
 			right: 0.5em;
 			top: 0;
 			height: 3em;
@@ -1968,12 +1970,14 @@ input, select, textarea {
 
 			#header nav ul {
 				margin: 0;
+				display: inline-block;
 			}
 
 				#header nav ul li {
 					display: inline-block;
 					margin-left: 0.5em;
 					font-size: 0.9em;
+					position: relative;
 				}
 
 					#header nav ul li a {
@@ -1988,6 +1992,22 @@ input, select, textarea {
 
 					#header nav ul li a:hover {
 						color: pink;
+					}
+
+					#header nav ul li ul {
+						display: none;
+						position: absolute;
+						background-color: rgba(255, 255, 255, 0.95);
+						border-radius: 0px 0px 20px 20px;
+						padding-right: 0.5rem;
+					}
+
+					#header nav ul li:hover ul{
+						display: block;
+					}
+
+					#header nav ul li ul li {
+						width: max-content;
 					}
 
 		@media screen and (max-width: 736px) {
