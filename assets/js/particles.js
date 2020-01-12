@@ -3,7 +3,7 @@ var canvas = document.getElementById("canvas"); // this only finds the first ele
 // console.log(canvas);
 
 var ctx = canvas.getContext("2d");
-var particlesOnScreen = 245;
+var particlesOnScreen = 300;
 var particlesArray = [];
 var w,h;
 w = canvas.width = window.innerWidth;
@@ -45,7 +45,7 @@ function drawSnowFlakes(){
 
             gradient.addColorStop(0, "rgba(255, 102, 102," + particlesArray[i].opacity + ")");  // red
             gradient.addColorStop(.8, "rgba(255, 240, 245," + particlesArray[i].opacity + ")");  // white
-            gradient.addColorStop(1, "rgba(255, 102, 178," + particlesArray[i].opacity + ")");   // pink
+            gradient.addColorStop(1, "rgba(255, 155, 155," + particlesArray[i].opacity + ")");   // pink
           
             ctx.beginPath(); 
             ctx.arc(
