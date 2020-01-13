@@ -1994,7 +1994,44 @@ input, select, textarea {
 						color: pink;
 					}
 
-					#header nav ul li ul {
+					#header nav ul li:hover ul {
+						display: block;
+						-webkit-animation-name: drop;
+								animation-name: drop;
+						-webkit-animation-duration: 300ms;
+								animation-duration: 300ms;
+						-webkit-animation-timing-function: ease-in-out;
+								animation-timing-function: ease-in-out;
+						-webkit-animation-fill-mode: forwards;
+								animation-fill-mode: forwards;
+					}
+
+					@-webkit-keyframes drop {
+						0% {
+						opacity: 0;
+						-webkit-transform: translateY(-100%);
+								transform: translateY(-100%);
+						}
+						100% {
+						opacity: 1;
+						-webkit-transform: translateY(0%);
+								transform: translateY(0%);
+						}
+					}
+					@keyframes drop {
+						0% {
+						opacity: 0;
+						-webkit-transform: translateY(-100%);
+								transform: translateY(-100%);
+						}
+						100% {
+						opacity: 1;
+						-webkit-transform: translateY(0%);
+								transform: translateY(0%);
+						}
+					}
+
+					#header nav ul.drop-menu {
 						display: none;
 						position: absolute;
 						background-color: rgba(255, 255, 255, 0.95);
@@ -2002,11 +2039,11 @@ input, select, textarea {
 						padding-right: 0.5rem;
 					}
 
-					#header nav ul li:hover ul{
-						display: block;
+					#header nav ul.drop-menu li a:hover {
+						color: pink;
 					}
 
-					#header nav ul li ul li {
+					#header nav ul.drop-menu li {
 						width: max-content;
 					}
 
@@ -2020,8 +2057,8 @@ input, select, textarea {
 					#header nav ul li:hover > ul li:nth-child(1) {
 						-webkit-animation-name: cascade;
 								animation-name: cascade;
-						-webkit-animation-duration: 300ms;
-								animation-duration: 300ms;
+						-webkit-animation-duration: 500ms;
+								animation-duration: 500ms;
 						-webkit-animation-delay: 0ms;
 								animation-delay: 0ms;
 						-webkit-animation-timing-function: ease-in-out;
@@ -2032,8 +2069,8 @@ input, select, textarea {
 					#header nav ul li:hover > ul li:nth-child(2) {
 						-webkit-animation-name: cascade;
 								animation-name: cascade;
-						-webkit-animation-duration: 300ms;
-								animation-duration: 300ms;
+						-webkit-animation-duration: 500ms;
+								animation-duration: 500ms;
 						-webkit-animation-delay: 100ms;
 								animation-delay: 100ms;
 						-webkit-animation-timing-function: ease-in-out;
@@ -2044,8 +2081,8 @@ input, select, textarea {
 					#header nav ul li:hover > ul li:nth-child(3) {
 						-webkit-animation-name: cascade;
 								animation-name: cascade;
-						-webkit-animation-duration: 300ms;
-								animation-duration: 300ms;
+						-webkit-animation-duration: 500ms;
+								animation-duration: 500ms;
 						-webkit-animation-delay: 200ms;
 								animation-delay: 200ms;
 						-webkit-animation-timing-function: ease-in-out;
@@ -2056,8 +2093,8 @@ input, select, textarea {
 					#header nav ul li:hover > ul li:nth-child(4) {
 						-webkit-animation-name: cascade;
 								animation-name: cascade;
-						-webkit-animation-duration: 300ms;
-								animation-duration: 300ms;
+						-webkit-animation-duration: 500ms;
+								animation-duration: 500ms;
 						-webkit-animation-delay: 300ms;
 								animation-delay: 300ms;
 						-webkit-animation-timing-function: ease-in-out;
@@ -2068,8 +2105,8 @@ input, select, textarea {
 					#header nav ul li:hover > ul li:nth-child(5) {
 						-webkit-animation-name: cascade;
 								animation-name: cascade;
-						-webkit-animation-duration: 300ms;
-								animation-duration: 300ms;
+						-webkit-animation-duration: 500ms;
+								animation-duration: 500ms;
 						-webkit-animation-delay: 400ms;
 								animation-delay: 400ms;
 						-webkit-animation-timing-function: ease-in-out;
@@ -2080,8 +2117,8 @@ input, select, textarea {
 					#header nav ul li:hover > ul li:nth-child(6) {
 						-webkit-animation-name: cascade;
 								animation-name: cascade;
-						-webkit-animation-duration: 300ms;
-								animation-duration: 300ms;
+						-webkit-animation-duration: 500ms;
+								animation-duration: 500ms;
 						-webkit-animation-delay: 500ms;
 								animation-delay: 500ms;
 						-webkit-animation-timing-function: ease-in-out;
