@@ -1990,7 +1990,7 @@ input, select, textarea {
 					}
 
 					#header nav ul li a:hover {
-						color: pink;
+						color: deeppink;
 						background: #ddd;
 					}
 
@@ -2039,7 +2039,7 @@ input, select, textarea {
 					}
 
 					#header nav ul.drop-menu li a:hover {
-						color: pink;
+						color: deeppink;
 						background: #ddd;
 					}
 
