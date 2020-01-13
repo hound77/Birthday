@@ -1961,21 +1961,20 @@ input, select, textarea {
 		#header nav {
 			position: relative;
 			text-align: center;
-			left: 0.5em;
-			right: 0.5em;
 			top: 0;
 			height: 3em;
 			line-height: 3em;
 		}
 
 			#header nav ul {
+				padding: 0;
 				margin: 0;
 				display: inline-block;
 			}
 
 				#header nav ul li {
 					display: inline-block;
-					margin-left: 0.5em;
+					margin: 0.3em;
 					font-size: 0.9em;
 					position: relative;
 				}
@@ -2035,16 +2034,16 @@ input, select, textarea {
 						display: none;
 						position: absolute;
 						background-color: rgba(255, 255, 255, 0.95);
-						border-radius: 0px 0px 20px 20px;
-						padding-right: 0.5rem;
+						border-radius: 0px 0px 15px 15px;
 					}
 
 					#header nav ul.drop-menu li a:hover {
 						color: pink;
+						background: #ddd;
 					}
 
 					#header nav ul.drop-menu li {
-						width: max-content;
+						width: 130px;
 					}
 
 					#header nav ul li:hover > ul {
