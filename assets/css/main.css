@@ -2044,7 +2044,8 @@ input, select, textarea {
 					}
 
 					#header nav ul.drop-menu li {
-						width: 130px;
+						width: 100px;
+						min-width: max-content;
 					}
 
 					#header nav ul li:hover > ul {
