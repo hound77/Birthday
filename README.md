@@ -1,6 +1,6 @@
 # Valentine's Recap
 
-Work in progress. A little gift I'm making for my gf to surprise her on Valentine's day.
+Photo album website that I made for my gf to surprise her on Valentine's day 2020.
 
 Hosted at https://tommyli3318.github.io/valentines/
 
