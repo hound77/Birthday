@@ -99,9 +99,13 @@
 				
 				<section>
 					<p style="font-size: small;"><br>告白气球 - Jay Chou</p>
-					<audio controls loop>
+					<audio controls autoplay loop id="song">
 						<source src="sound/song.mp3" type="audio/mpeg">
 					</audio>
+					<script>
+						var audio = document.getElementById("song");
+						audio.volume = 0.2; // no deaf pls
+					</script>
 				</section>
 
 				<footer>
