@@ -4,7 +4,7 @@ Photo album website that I made for my gf to surprise her on Valentine's day 202
 
 Hosted at https://tommyli3318.github.io/valentines/
 
-Credits:
+Credits:-
 
 * Boilerplate: [Big Picture](https://html5up.net/big-picture) from [html5up.net](https://html5up.net/)
 
